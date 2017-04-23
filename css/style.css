@@ -7,8 +7,12 @@ body {
     text-transform: uppercase;
 }
 
-.title,
-.subtitle {
+.main-title {
     font-size: 30px;
     line-height: 42px;
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 18px;
 }
