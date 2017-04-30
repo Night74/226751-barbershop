@@ -2,9 +2,10 @@ body {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
     font-weight: bold;
     text-transform: uppercase;
+    
+    color: #000000;
 }
 
 .main-title {
@@ -15,4 +16,128 @@ body {
 .subtitle {
     font-size: 14px;
     line-height: 18px;
+}
+
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/*Стили страницы Магазина*/
+.shop-header .logo {
+    width: 111px;
+    height: 24px;
+    float: left;
+}
+
+.shop-header .main-navigation {
+    float: left;
+    width: 630px;
+}
+
+.shop-header .user-block {
+    width: 101px;
+    float: right;
+}
+
+.shop-header {
+    margin-bottom: 56px;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.shop-page .content-left {
+    width: 220px;
+    float: left;
+}
+
+.shop-page .content-right {
+    float: right;
+    width: 720px;
+} 
+
+.content-right .product-item {
+    width: 219px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 45px;
+}
+
+.shop-footer {
+    margin-top: 49px;
+}
+
+.shop-footer .contacts {
+    float: left;
+    width: 320px;
+    margin-right: 80px;
+}
+
+.shop-footer .social {
+    float: left;
+    width: 140px;
+}
+
+.shop-footer .dev-by {
+    float: right;
+    width: 140px;
+}
+
+/*Стили страницы Товара*/
+
+.product-header .logo {
+    width: 111px;
+    height: 24px;
+    float: left;
+}
+
+.product-header .main-navigation {
+    float: left;
+    width: 560px;
+}
+
+.product-header .user-block {
+    float: right;
+    width: 150px;   
+}
+
+.product-page .content-left {
+    float: left;
+}
+
+.product-page .content-right {
+    width: 390px;
+    float: right;
+}
+
+.product-page .gallery .main-picture {
+    margin-left: 0;
+}
+
+.product-page .gallery img {
+    margin-right: 17px;
+}
+
+.product-page .gallery img:last-child {
+    margin-right: 0;
+}
+
+.product-footer .contacts {
+    float: left;
+}
+
+.product-footer .social {
+    float: left;
+    width: 320px;
+    margin-right: 80px;
+}
+
+.product-footer .dev-by {
+    float: right;
+    width: 140px;  
 }
