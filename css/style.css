@@ -22,122 +22,278 @@ body {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
+    
+/*    background: #eee;*/
 }
 
-/*Стили страницы Магазина*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*-----------------Стили главной страницы--------------------------*/
+
+/*Шапка*/
+
+.main-header {
+    margin-bottom: 60px;
+}
+
+.main-header .navigation {
+    float: left;
+    width: 780px;
+}
+
+.main-header .user-block {
+    float: right;
+    width: 140px;
+}
+
+/*Основное содержание*/
+
+.main-page .main-logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+}
+
+.main-page .features {
+    margin-bottom: 80px;
+}
+
+.features .item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.features .item:last-child {
+    margin-right: 0;
+}
+
+.content-1 {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+.content-1 .content-left {
+    float: left;
+    width: 380px;
+}
+
+.content-1 .content-right {
+    float: right;
+    width: 340px;
+}
+
+.content-2 {
+    padding: 50px 80px;
+}
+
+.content-2 .content-left {
+    float: left;
+    width: 380px;
+}
+
+.content-2 .content-right {
+    float: right;
+    width: 300px;
+}
+
+/*Подвал*/
+
+.main-footer {
+    margin-top: 65px;
+    padding-top: 62px;
+    padding-bottom: 42px;
+    background: #ccc;
+}
+
+.main-footer .contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.main-footer .social {
+    float: left;
+    width: 180px;
+}
+
+.main-footer .dev-by {
+    float: right;
+    width: 160px;
+}
+
+/*-----------------Стили страницы Магазина--------------------------*/
+
+/*Шапка*/
+
+.shop-header {
+    background: black;
+}
+
 .shop-header .logo {
     width: 111px;
     height: 24px;
     float: left;
 }
 
-.shop-header .main-navigation {
+.shop-header .navigation {
     float: left;
-    width: 630px;
+    width: 620px;
 }
 
 .shop-header .user-block {
-    width: 101px;
     float: right;
+    width: 140px;
 }
 
-.shop-header {
-    margin-bottom: 56px;
+/*Основное содержание*/
+
+.shop-page {
+    padding-top: 55px;
+    background: #f8f5f2;
 }
 
-.clearfix {
-    content: "";
-    display: table;
-    clear: both;
+.shop-page .main-title {
+    margin: 0;
 }
 
-.shop-page .content-left {
+.shop-page .main-title {
+    margin-bottom: 21px;
+}
+
+.shop-page .breadcrumbs {
+    margin-bottom: 53px;
+}
+
+.shop-page .filter {
     width: 220px;
     float: left;
 }
 
-.shop-page .content-right {
+.shop-page .products {
     float: right;
-    width: 720px;
-} 
+    width: 700px;
+}
 
-.content-right .product-item {
-    width: 219px;
-    float: left;
-    margin-right: 20px;
+.products .product-item {
+    width: 220px;
+    display: inline-block;
+}
+
+.shop-page .page-numbers {
+    margin-left: 240px;
+    padding-bottom: 49px;
+}
+
+.shop-page .content {
     margin-bottom: 45px;
 }
 
+/*Подвал*/
+
 .shop-footer {
-    margin-top: 49px;
+    background: gray;
+    padding-top: 62px;
+    padding-bottom: 42px;
 }
 
 .shop-footer .contacts {
     float: left;
     width: 320px;
-    margin-right: 80px;
+    margin-right: 60px;
 }
 
 .shop-footer .social {
     float: left;
-    width: 140px;
+    width: 180px;
 }
 
 .shop-footer .dev-by {
     float: right;
-    width: 140px;
+    width: 160px;
 }
 
-/*Стили страницы Товара*/
+/*-----------------Стили страницы Товара магазина--------------------------*/
+
+/*Шапка*/
+
+.product-header {
+    background: #eee;
+}
 
 .product-header .logo {
+    float: left;
     width: 111px;
     height: 24px;
-    float: left;
 }
 
-.product-header .main-navigation {
+.product-header .navigation {
     float: left;
-    width: 560px;
+    width: 620px;
 }
 
 .product-header .user-block {
     float: right;
-    width: 150px;   
+    width: 140px;
 }
 
-.product-page .content-left {
+/*Основное содержание страницы*/
+
+.product-page {
+    background: #f8f5f2;
+    padding-top: 57px;
+    padding-bottom: 49px;
+}
+
+.product-page .main-title {
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+.product-page .breadcrumbs {
+    margin-bottom: 56px;
+}
+
+.product-page .content {
+    
+}
+
+.product-page .gallery {
+    width: 460px;
     float: left;
 }
 
+.gallery .pictures {
+    margin: 0;
+}
+
 .product-page .content-right {
-    width: 390px;
     float: right;
+    width: 390px;
 }
 
-.product-page .gallery .main-picture {
-    margin-left: 0;
-}
+/*Подвал*/
 
-.product-page .gallery img {
-    margin-right: 17px;
-}
-
-.product-page .gallery img:last-child {
-    margin-right: 0;
+.product-footer {
+    background: #232323;
 }
 
 .product-footer .contacts {
     float: left;
-}
-
-.product-footer .social {
-    float: left;
     width: 320px;
-    margin-right: 80px;
+    margin-right: 60px;
+}
+.product-footer .social {    
+    float: left;
+    width: 180px;
 }
 
 .product-footer .dev-by {
     float: right;
-    width: 140px;  
+    width: 160px;
 }
